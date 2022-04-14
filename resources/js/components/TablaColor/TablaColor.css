@@ -1,0 +1,189 @@
+.TablaColor {
+    width: 70%;
+    margin:0 auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr .05fr 1fr;
+    transform: translateY(-80px);
+}
+
+.TablaColor .vacio1, .TablaColor .vacio2{
+    display: none;
+}
+
+.TablaColor .sinColor {
+    background: none;
+    height: 15px;
+}
+
+.TablaColor h5 {
+    margin: 0;
+    font-size: 30px;
+    background: rgb(10, 10, 36);
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+
+.TablaColor > h5 > span {
+    background:rgb(10, 10, 36);
+    position: absolute;
+    padding: 10px 17px;
+    border-radius: 50%;
+    transform: translateY(-25px) translateX(-50%);
+}  
+
+.TablaColor .rojo {
+    background:  rgba(204,46,55);
+}
+
+.TablaColor .azul {
+    background: rgb(10, 10, 36);
+}
+
+.TablaColor .titulos {
+    color: white;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+} 
+
+.TablaColor div > h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3vw;
+    margin: 0 10px;
+}
+
+.TablaColor > span {
+    background: red;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.TablaColor > .titulos > .tit1 {
+    margin: 0;
+    font-size: 3vw;
+    align-self: flex-end;
+}
+
+.TablaColor > .titulos > .tit2 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 100;
+    align-self: flex-start;
+}
+
+.TablaColor .container {
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 220px;
+    justify-items: center;
+}
+
+.TablaColor .container p {
+    text-align: center;
+    font-size: 1vw;
+    margin: 15px 10px;
+}
+
+.TablaColor .container ul li::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background:rgb(255, 255, 255);
+    display: inline-block;
+    margin: 1px 10px 1px 1px;
+    border-radius: 50%;
+}
+
+.TablaColor .container ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 0;
+    transform: translateX(-10%);
+}
+
+@media screen and (max-width: 1080px) {
+    .TablaColor {
+        grid-template-columns: 1fr;
+        grid-template-rows:.1fr .5fr .05fr 1fr .1fr .5fr .1fr .5fr .05fr 1fr .1fr .5fr .1fr .5fr .05fr 1fr .1fr;
+        transform: translateY(-80px);
+    }
+
+    .TablaColor .t1 {
+        grid-row: 1/2;
+    }
+
+    .TablaColor .uno {
+        grid-row: 2/3;
+    }
+
+    .TablaColor .sinColor1 {
+        grid-row: 3/4;
+    }
+
+    .TablaColor .container1 {
+        grid-row: 4/5;
+    }
+
+    .TablaColor .color1 {
+        grid-row: 5/6;
+    }
+
+    .TablaColor .vacio1 {
+        display: inline;
+        grid-row: 6/7;
+    }
+
+    .TablaColor .t2 {
+        grid-row: 7/8;
+    }
+
+    .TablaColor .dos {
+        grid-row: 8/9;
+    }
+
+    .TablaColor .sinColor2 {
+        grid-row: 9/10;
+    }
+
+    .TablaColor .container2 {
+        grid-row: 10/11;
+    }
+
+    .TablaColor .color2 {
+        grid-row: 11/12;
+    }
+
+    .TablaColor .vacio2 {
+        display: inline;
+        grid-row: 12/13;
+    }
+
+    .TablaColor .t3 {
+        grid-row: 13/14;
+    }
+
+    .TablaColor .tres {
+        grid-row: 14/15;
+    }
+
+    .TablaColor .sinColor3 {
+        grid-row: 15/16;
+    }
+
+    .TablaColor .container3 {
+        grid-row: 16/17;
+    }
+
+    .TablaColor .color3 {
+        grid-row: 17/18;
+    }
+
+}
+                         

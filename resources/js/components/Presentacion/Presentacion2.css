@@ -1,0 +1,80 @@
+.Presentacion2 {
+    background:none;
+    color: white;
+    padding-top: calc((5vw + 4vmin)*1.5);
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr 1fr ;
+    justify-items: center;
+}
+
+.Presentacion2 img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.Presentacion2 h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.Presentacion2 h1 span {
+    display: block;
+}
+
+.Presentacion2 .linea {
+    align-self: center;
+    background: rgba(204,46,55);
+    width: 200px;
+    height: 10px;
+}
+
+.Presentacion2 .titulo1 {
+    align-self: flex-end;
+    font-size: calc(3vw + 2vmin);
+}
+
+.Presentacion2 .titulo2 {
+    font-size: calc(4vw + 2vmin);
+}
+
+.Presentacion2 p {
+    width: 70%;
+    text-align: center;
+}
+
+.Presentacion2 .p1 {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 590px) {
+
+    .Presentacion2 .linea {
+        width: 100px;
+        height: 5px;
+    }
+
+    .Presentacion2 {
+        grid-template-rows: .5fr .1fr 1fr ;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .Presentacion2 .p1 {
+        display: inline;
+    }
+
+    .Presentacion2 .p2 {
+        display: none;
+    }
+
+
+
+}

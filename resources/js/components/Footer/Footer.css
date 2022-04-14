@@ -1,0 +1,77 @@
+footer {
+    display: grid;
+    grid-template-columns: 30px 8fr 2fr .5fr 100px;
+    width: 100%;
+    margin:100px 0 0 0;
+    padding: 0;
+    border-top: 1px solid #ffffff10;
+    background: rgb(10, 10, 36);
+}
+
+footer p {
+    grid-column: 2/3;
+    font-size: 17px;
+    color: #94867c;
+    padding: 0;
+    margin: 20px;
+}
+
+footer .socialFooter {
+    grid-column: 3/4;
+    align-self: center;
+}
+
+footer .socialFooter a{
+    margin: 10px;
+    color: #efe5dd;
+}
+
+footer button {
+    grid-column: 4/5;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer button i{
+    color:  #efe5dd;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+}
+
+@media screen and (max-width: 750px) {
+
+    footer {
+        display: block;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 160px;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #ffffff10;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer .socialFooter {
+        justify-self: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer button {
+        margin-top:10px;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        /* grid-row: 1 / 2; */
+    }
+
+}

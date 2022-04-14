@@ -1,0 +1,316 @@
+.Contactenos {
+    margin:170px 0 0 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: .2fr 1fr 1fr 1fr;
+}
+
+.Contactenos .bloque {
+    width: 100%;
+    height: 150px;
+    background: rgba(204,46,55);
+    align-self: center;
+}
+
+.Contactenos h2 {
+    align-self: center;
+    text-align: center;
+    font-size: calc(.8vw + 7vmin);
+    font-weight: 900;
+    margin: 0 10px;
+}
+
+.Contactenos form {
+    background: white;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr .5fr 1fr .5fr 2fr 1.4fr;
+    /* border: 1px solid black; */
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.192);
+    z-index: 100;
+}
+
+.Contactenos form h3 {
+    grid-column: 1/3;
+}
+
+.Contactenos form input, .Contactenos form textarea {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.Contactenos form label:nth-child(2), .Contactenos form input:nth-child(4), .Contactenos form input:nth-child(8) {
+    margin-right: 15px;
+}
+
+.Contactenos form label:nth-child(3), .Contactenos form input:nth-child(5), .Contactenos form input:nth-child(9), .Contactenos form label:nth-child(7) {
+    margin-left: 15px;
+}
+
+.Contactenos .celular {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.Contactenos .pais {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.Contactenos form label {
+    font-size: 13px;
+    align-self: flex-end;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.Contactenos form input {
+    width: 88%;
+    height: 20px;
+    align-self: center;
+    outline: none;
+}
+
+.Contactenos form label:nth-child(6) {
+    grid-column: 1/3;
+    align-self: flex-start;
+}
+
+.Contactenos form textarea {
+    grid-column: 1/3;
+    outline: none;
+}
+
+.Contactenos form button {
+    border: none;
+    border-radius: 5px;
+    background: rgb(10, 10, 36);
+    color: white;
+    margin-top: 15px;
+}
+
+.Contactenos form .error {
+    color: #CC2E37;
+    font-size: 14px;
+    justify-self: center;
+    margin: 0 5px;
+}
+
+.Contactenos .mensaje {
+    background: #CC2E37;
+    position: fixed;
+    width: 270px;
+    right: 0px;
+    bottom: 100px;
+    border:1px solid rgb(136, 33, 38);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 6000;
+    /* animation: actualizado 1s forwards; */
+    
+}
+
+.Contactenos .mensaje p {
+    padding: 0px 40px 0px 20px;
+    color: white;
+}
+
+.Contactenos .mensaje i {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.Contactenos .info {
+    background: rgba(204,46,55);
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.192);
+    z-index: 100;
+}
+
+.Contactenos .info h3 {
+    font-weight: 100;
+}
+
+.Contactenos .info p {
+    font-size: 12px;
+}
+
+.Contactenos iframe {
+    grid-column: 1/5;
+    z-index: 1;
+    transform: translateY(-70px);
+    height: 400px;
+}
+
+.Contactenos .dos {
+    display: none;
+}
+
+.Contactenos .tres {
+    display: none;
+}
+
+.Contactenos .botones {
+    transform: translateY(-70px);
+    align-self: center;
+    margin-left: 100px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.Contactenos .botones button {
+    background: rgba(204,46,55);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.Contactenos .botones ul {
+    display: inline;
+    background: rgba(204,46,55);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px 0 0 0;
+}
+
+.Contactenos .botones ul:hover {
+    background: rgb(226, 56, 64);
+}
+
+.Contactenos .botones ul li {
+    position: absolute;
+    background: rgba(204,46,55);
+    left: 0;
+    display: inline;
+    padding: 10px;
+    opacity: 0;
+    width: 90px;
+}
+
+.Contactenos .botones ul li:hover {
+    background: rgb(226, 56, 64);
+}
+
+.Contactenos .botones ul:hover li:nth-child(1) {
+    top: -43px;
+    opacity: 1;
+}
+.Contactenos .botones ul:hover li:nth-child(2) {
+    top: -86px;
+    opacity: 1;
+}
+.Contactenos .botones ul:hover li:nth-child(3) {
+    top: -129px;
+    opacity: 1;
+}
+.Contactenos .botones ul:hover li:nth-child(4) {
+    top: -172px;
+    opacity: 1;
+    border-radius: 5px 5px 0 0  ;
+}
+
+
+.Contactenos .botones button:hover {
+    background: rgb(226, 56, 64);
+}
+
+.Contactenos .botones button:nth-child(3) {
+    border-radius: 0 5px 0 0;
+}
+
+.Contactenos .dos {
+    display: none;
+}
+
+.Contactenos .tres {
+    display: none;
+}
+
+.Contactenos .cuatro {
+    display: none;
+}
+
+.Contactenos .cinco {
+    display: none;
+}
+
+.Contactenos .seis {
+    display: none;
+}
+
+@media screen and (max-width: 970px) {
+
+    .Contactenos {
+        grid-template-rows: .5fr 1fr 1fr;
+        grid-template-columns: .2fr 1fr .2fr;
+    }
+
+    .Contactenos .bloque {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .Contactenos h2 {
+        grid-row: 1/2;
+        grid-column: 2/4;
+    }
+
+    .Contactenos form {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .Contactenos .info {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .Contactenos .botones {
+        grid-row: 5/6;
+        grid-column: 2/3;
+        width: 100%;
+        z-index: 8000;
+        margin: 0 auto 100px auto;
+        transform: translate(0);
+    }
+
+    .Contactenos iframe {
+        transform: translateY(0);
+    }
+
+    .Contactenos .botones ul {
+        border-radius: 0 0 0 5px;
+    }
+
+    .Contactenos .botones button:nth-child(3) {
+        border-radius: 0 0 5px 0;
+    }
+
+    .Contactenos .botones ul:hover li:nth-child(1) {
+        top: 43px;
+        opacity: 1;
+    }
+    .Contactenos .botones ul:hover li:nth-child(2) {
+        top: 86px;
+        opacity: 1;
+    }
+    .Contactenos .botones ul:hover li:nth-child(3) {
+        top: 129px;
+        opacity: 1;
+    }
+    .Contactenos .botones ul:hover li:nth-child(4) {
+        top: 172px;
+        opacity: 1;
+        border-radius: 0 0 5px 5px ;
+    }
+
+
+}

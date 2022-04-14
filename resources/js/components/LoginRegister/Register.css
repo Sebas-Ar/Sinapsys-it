@@ -1,0 +1,101 @@
+.Register {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Register .fondo {
+    height: 100vh;
+    opacity: 1;
+    margin: 0;
+}
+
+.Register h1 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.Register > form {
+    align-self: center;
+    height: 80vh;
+    margin: 0 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.Register .input {
+    margin: 5px 0;
+    height: 40px;
+    width: 70%;
+    border: solid 1px #88888866;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.Register > form > .input > img {
+    height: 30%;
+}
+
+.Register form input {
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    align-self: center;
+    justify-self: flex-start;
+    width: 90%;
+}
+
+.Register form button {
+    margin: 5px 0;
+    height: 40px;
+    width: 187px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    background: #CC2E37;
+    color: white;
+}
+
+.Register form button:hover {
+    background: rgb(228, 13, 23);
+}
+
+.Register form a {
+    justify-self: flex-end;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #888888;
+    margin: 10px;
+}
+
+.Register .cerebro {
+    height: 50px;
+}
+
+.Register form .error {
+    color: #CC2E37;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+
+    .Register > img {
+        display: none;
+    }
+
+    .Register {
+    grid-template-columns:1fr;
+}
+}

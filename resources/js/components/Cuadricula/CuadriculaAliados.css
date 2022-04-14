@@ -1,0 +1,78 @@
+.CuadriculaAliados {
+    margin:100px 0 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 4fr .1fr 4fr .1fr 4fr .1fr 4fr;
+    align-content: center;
+}
+
+.CuadriculaAliados .linea {
+    background: #00000000;
+    width: 2px;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    height: 80%;
+    border-radius: 1px;
+}
+
+.CuadriculaAliados .linea1 {
+    grid-column: 2/3;
+}
+
+.CuadriculaAliados .linea2 {
+    grid-column: 4/5;
+}
+
+.CuadriculaAliados .linea3 {
+    grid-column: 6/7;
+}
+
+@media screen and (max-width: 1040px) {
+    .CuadriculaAliados {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 4fr .1fr 4fr .1fr 4fr;
+        margin:100px 60px 0 60px;
+    }
+
+    .CuadriculaAliados .linea {
+        grid-row: 1/5;
+    }
+
+    .CuadriculaAliados .linea3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .CuadriculaAliados {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 4fr .1fr 4fr;
+        margin:100px 10px 0 10px;
+    }
+
+    .CuadriculaAliados .linea1 {
+        grid-row: 1/7;
+    }
+
+    .CuadriculaAliados .linea2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .CuadriculaAliados {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin:100px 10px 0 10px;
+    }
+
+    .CuadriculaAliados .linea1 {
+        display: none;
+    }
+
+    .CuadriculaAliados .linea2 {
+        display: none;
+    }
+}

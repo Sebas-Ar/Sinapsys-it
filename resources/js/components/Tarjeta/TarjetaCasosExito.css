@@ -1,0 +1,11 @@
+.TarjetaCasosExito {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 240px;
+}
+.TarjetaCasosExito img {
+    height: 150px;
+    margin: 0 auto;
+}

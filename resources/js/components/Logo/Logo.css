@@ -1,0 +1,7 @@
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    transform: translate(50%);
+    height: calc(5vw + 4vmin);
+}

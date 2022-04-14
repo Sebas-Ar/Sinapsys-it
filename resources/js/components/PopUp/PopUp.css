@@ -1,0 +1,67 @@
+.PopUp {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #22222288;
+    z-index: 3000;
+}
+
+.PopUp .ventana {
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    transform: translateY(35%);
+}
+
+.PopUp .ventana video {
+    width: 100%;
+}
+
+.PopUp .ventana .cerrar {
+    position: absolute;
+    top: 1.5vw;
+    right: 1.5vw;
+    opacity: 0;
+    animation: mostrar 2s 4s linear forwards;
+}
+
+.PopUp .ventana .cerrar i{
+    font-size: 3vw;
+}
+
+.PopUp .ventana h1 {
+    font-family: righteous;
+    position: absolute;
+    font-size: 6vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: calc(9vw + 2vmin);
+    opacity: 0;
+    animation: mostrar 1s 3s linear forwards;
+    padding: 0 0 0 0;
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cerrar {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

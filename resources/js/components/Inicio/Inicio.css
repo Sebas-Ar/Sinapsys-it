@@ -1,0 +1,368 @@
+/* .inicio svg {
+    position: absolute;
+}  */
+
+svg {
+	width: 100%;
+	margin: 0;
+}
+
+
+@keyframes rotar {
+	from {
+		transform: rotate(0px);
+	} 
+	to {
+		transform: rotate(100px);
+	}
+}
+
+
+.inicio .seguridad, .inicio .titulo-seguridad {
+    opacity: 0;
+}
+
+.inicio .seguridad-ladron:hover .seguridad, .inicio .seguridad-ladron:hover .titulo-seguridad {
+    animation: activar 1s forwards;
+}
+
+.inicio .seguridad-ladron:hover .titulo-seguridad {
+    animation: mover-izquierda 1s forwards;
+}
+
+.inicio .seguridad-ladron {
+	transform: translate(400px);
+	z-index: 1000;
+}
+
+.inicio .seguridad-ladron:hover {
+	animation: mover 3s linear infinite ;
+}
+
+/* ----------------------------- */
+
+.inicio .contactenos, .inicio .titulo-contactenos {
+    opacity: 0;
+}
+
+.inicio .contactenos-persona:hover .contactenos, .inicio .contactenos-persona:hover .titulo-contactenos {
+    animation: activar 1s forwards;
+}
+
+.inicio .contactenos-persona:hover .titulo-contactenos {
+    animation: mover-derecha 1s forwards;
+}
+
+.inicio .contactenos-persona {
+    transform: translate(100px);
+}
+
+/* ------------------------------ */
+
+.inicio .desarrollo-sombra, .inicio .titulo-desarrollo {
+    opacity: 0;
+}
+
+.inicio .desarrollo:hover .desarrollo-sombra, .inicio .desarrollo:hover .titulo-desarrollo {
+    animation: activar 1s forwards;
+}
+
+.inicio .desarrollo:hover .titulo-desarrollo {
+    animation: mover-derecha 1s forwards;
+}
+
+.inicio .desarrollo {
+    transform: translate(160px);
+}
+
+/* ------------------------------ */
+
+.inicio .servidores-sombra, .inicio .titulo-servidores {
+	opacity: 0;
+}
+
+.inicio .servidores:hover .servidores-sombra, .inicio .servidores:hover .titulo-servidores {
+    animation: activar 1s forwards;
+}
+
+.inicio .servidores:hover .titulo-servidores {
+    animation: mover-izquierda 1s forwards;
+}
+
+.inicio .botones {
+    animation: activar 1s alternate-reverse infinite;
+}
+
+.inicio .servidores {
+    transform: translate(250px);
+}
+
+/* ------------------------------ */
+
+.inicio .cables-sombra, .inicio .titulo-cables {
+    opacity: 0;
+}
+
+.inicio .cables-sombra {
+    transform: translate(30px);
+}
+
+.inicio .titulo-cables {
+	transform: translate(-200px);
+}
+
+.inicio .cables:hover .cables-sombra, .inicio .cables:hover .titulo-cables {
+    animation: activar 1s forwards;
+}
+
+.inicio .cables:hover .titulo-cables {
+    animation: mover-derecha-cables 1s forwards;
+}
+
+
+/* ------------------------------ */
+
+.inicio .computadores-sombra, .inicio .titulo-computadores {
+    opacity: 0;
+}
+
+.inicio .computadores:hover .computadores-sombra, .inicio .computadores:hover .titulo-computadores {
+    animation: activar 1s forwards;
+}
+
+.inicio .computadores:hover .titulo-computadores {
+    animation: mover-izquierda 1s forwards;
+}
+
+.inicio .computadores {
+    transform: translate(180px);
+}
+
+/* ------------------------------ */
+
+.inicio .soc-noc-sombra, .inicio .titulo-soc-noc {
+    opacity: 0;
+}
+
+.inicio .soc-noc:hover .soc-noc-sombra, .inicio .soc-noc:hover .titulo-soc-noc {
+    animation: activar 1s forwards;
+}
+
+.inicio .soc-noc:hover .titulo-soc-noc {
+    animation: mover-derecha 1s forwards;
+}
+
+.inicio .soc-noc {
+    transform: translate(120px);
+}
+
+/* -------------------------------- */
+
+@keyframes mover {
+	0% {
+		transform: translate(400px, 0);
+
+	}
+
+	25% {
+		transform: translate(450px, -8px);
+	}
+
+	50% {
+		transform: translate(400px, 0);
+	}
+
+	75% {
+		transform: translate(350px, -8px);
+	}
+
+	100% {
+		transform: translate(400px, 0);
+	}
+}
+
+@keyframes activar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mover-izquierda {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes mover-derecha {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes mover-derecha-cables {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(180px);
+    }
+}
+
+
+
+
+
+
+.st0{fill:none;}
+	.st1{fill:#1B476E;}
+	.st2{fill:#2A2C2B;}
+	.st3{fill:#1B2531;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:none;}
+	.st5{fill:#4B90B9;}
+	.st6{fill:none;stroke:#C6D4FF;stroke-width:0.7727;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#C6D4FF;stroke-width:0.7746;stroke-miterlimit:10;}
+	.st8{fill:#6C83A2;}
+	.st9{fill:#FF9D81;}
+	.st10{fill:#FFB7A4;}
+	.st11{fill:none;stroke:#FF9D81;stroke-width:0.7727;stroke-miterlimit:10;}
+	.st12{fill:#C6D4FF;}
+	.st13{fill:#AF3139;}
+	.st14{fill:#FFFFFF;}
+	.st15{fill:#13131B;}
+	.st16{fill:#D5D7CC;}
+	.st17{fill:#909DA6;}
+	.st18{fill:#229CCB;}
+	.st19{fill:#434D56;}
+	.st20{fill:none;stroke:#FFFFFF;stroke-width:0.7727;stroke-miterlimit:10;}
+	.st21{fill:none;stroke:#13131B;stroke-width:3.8637;stroke-miterlimit:10;}
+	.st22{fill:#E8E838;}
+	.st23{fill:#D65479;}
+	.st24{fill:#00D9EA;}
+	.st25{fill:#413245;}
+	.st26{fill:#309CA8;}
+	.st27{fill:#CDD1D3;}
+	.st28{fill:none;stroke:#ABA3AE;stroke-width:7.7275;stroke-miterlimit:10;}
+	.st29{fill:#1D1312;}
+	.st30{fill:#3870AB;}
+	.st31{fill:#4CBFD1;}
+	.st32{fill:url(#SVGID_23_);}
+	.st33{fill:url(#SVGID_24_);}
+	.st34{fill:url(#SVGID_25_);}
+	.st35{fill:url(#SVGID_26_);}
+	.st36{fill:url(#SVGID_27_);}
+	.st37{fill:url(#SVGID_28_);}
+	.st38{fill:url(#SVGID_29_);}
+	.st39{fill:url(#SVGID_30_);}
+	.st40{fill:url(#SVGID_31_);}
+	.st41{fill:url(#SVGID_32_);}
+	.st42{fill:url(#SVGID_33_);}
+	.st43{fill:url(#SVGID_34_);}
+	.st44{fill:url(#SVGID_35_);}
+	.st45{fill:url(#SVGID_36_);}
+	.st46{fill:url(#SVGID_37_);}
+	.st47{fill:url(#SVGID_38_);}
+	.st48{fill:url(#SVGID_39_);}
+	.st49{fill:url(#SVGID_40_);}
+	.st50{fill:#844854;}
+	.st51{fill:url(#SVGID_41_);}
+	.st52{fill:url(#SVGID_42_);}
+	.st53{fill:#332538;}
+	.st54{fill:#3881A5;}
+	.st55{fill:none;stroke:#844854;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st56{opacity:0.3882;enable-background:new    ;}
+	.st57{fill:url(#SVGID_43_);}
+	.st58{fill:#593446;}
+	.st59{fill:#151B31;}
+	.st60{fill:#143F59;}
+	.st61{fill:#1A4866;}
+	.st62{fill:#ECEDEF;}
+	.st63{fill:#AFBDDC;}
+	.st64{fill:#AD5C49;}
+	.st65{fill:#B4C1C8;}
+	.st66{fill:#D7E3EB;}
+	.st67{fill:#879BA6;}
+	.st68{fill:#D8E0E3;}
+	.st69{fill:#D0DAE9;}
+	.st70{fill:#8C2346;}
+	.st71{opacity:0.2118;enable-background:new;}
+	.st72{fill:url(#SVGID_44_);}
+	.st73{fill:#303241;}
+	.st74{fill:#1E202B;}
+	.st75{fill:#282723;}
+	.st76{fill:#1A1826;}
+	.st77{fill:#31303E;}
+	.st78{fill:none;stroke:#E8C8B1;stroke-width:3.8637;stroke-miterlimit:10;}
+	.st79{fill:none;stroke:#C19272;stroke-width:3.8637;stroke-miterlimit:10;}
+	.st80{fill:#E8C8B1;}
+	.st81{opacity:0.31;fill:#FFFFFF;}
+	.st82{opacity:0.46;fill:#1E202B;}
+	.st83{opacity:0.42;fill:#1E202B;}
+	.st84{fill:#E8AA10;}
+	.st85{fill:#FCC212;}
+	.st86{fill:#1A1A1A;}
+	.st87{fill:#4F514E;}
+	.st88{fill:#00040B;}
+	.st89{fill:#313B30;}
+	.st90{fill:#3C463B;}
+	.st91{fill:#161713;}
+	.st92{fill:#E1C49B;}
+	.st93{fill:#F7C34E;}
+	.st94{fill:#F3D97F;}
+	.st95{fill:#844739;}
+	.st96{fill:#E8D5B7;}
+	.st97{fill:#FCFBFF;}
+	.st98{fill:#954F3F;}
+	.st99{opacity:0.22;fill:url(#SVGID_45_);}
+	.st100{fill:#DAD9C5;}
+	.st101{fill:#C9C7B5;}
+	.st105{fill:#1B476E;}
+	.st106{fill:#2A2C2B;}
+	.st107{fill:#1B2531;}
+	.st108{fill:none;}
+	.st109{fill:#4B90B9;}
+	.st110{fill:none;stroke:#C6D4FF;stroke-width:0.7727;stroke-miterlimit:10;}
+	.st111{fill:#FF9D81;}
+	.st112{fill:#FFB7A4;}
+	.st113{fill:none;stroke:#FF9D81;stroke-width:0.7727;stroke-miterlimit:10;}
+	.st114{fill:none;stroke:#C6D4FF;stroke-width:0.7746;stroke-miterlimit:10;}
+	.st115{fill:#6C83A2;}
+	.st116{fill:#C6D4FF;}
+	.st117{fill:#FFDFCA;}
+	.st118{opacity:0.6;fill:#0C283A;}
+	.st119{enable-background:new;}
+
+	.sombra-ladron {
+		display: none;
+	}
+
+	.sombra1 {
+		height: 100vh;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.795);
+		position: absolute;
+		opacity: .5;
+		z-index: 1000;
+	}
+
+	.link1 {
+		z-index: 10000;
+		background: red;
+	}
+
+	.link2 {
+		z-index: -1;
+	}
+
+

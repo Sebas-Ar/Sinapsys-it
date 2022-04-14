@@ -1,0 +1,179 @@
+.Contacto {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: .3fr 1fr 1fr .8fr;
+}
+
+.Contacto .bloque {
+    width: 100%;
+    height: 150px;
+    background: rgba(204,46,55);
+    align-self: center;
+}
+
+.Contacto h2 {
+    align-self: center;
+    text-align: center;
+    /* font-size: 40px; */
+    font-size: calc(.8vw + 7vmin);
+    font-weight: 900;
+}
+
+.Contacto form {
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr .5fr 1fr .5fr 2fr /* 1fr */ 1.4fr;
+    /* border: 1px solid black; */
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.192);
+}
+
+.Contacto form h3 {
+    grid-column: 1/3;
+}
+
+.Contacto form input, .Contacto form textarea {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.Contacto form label:nth-child(2), .Contacto form input:nth-child(4), .Contacto form input:nth-child(8) {
+    margin-right: 15px;
+}
+
+.Contacto form label:nth-child(3), .Contacto form input:nth-child(5), .Contacto form input:nth-child(9), .Contacto form label:nth-child(7) {
+    margin-left: 15px;
+}
+
+.Contacto .celular {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.Contacto .pais {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.Contacto form label {
+    font-size: 13px;
+    align-self: flex-end;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.Contacto form input {
+    width: 88%;
+    height: 20px;
+    align-self: center;
+    outline: none;
+}
+
+.Contacto form label:nth-child(6) {
+    grid-column: 1/3;
+    align-self: flex-start;
+}
+
+.Contacto form textarea {
+    grid-column: 1/3;
+    outline: none;
+}
+
+.Contacto form button {
+    border: none;
+    border-radius: 5px;
+    background: rgb(10, 10, 36);
+    color: white;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.Contacto form .error {
+    color: #CC2E37;
+    font-size: 14px;
+    justify-self: center;
+    margin: 0 5px;
+}
+
+.Contacto form .mensaje {
+    background: #CC2E37;
+    position: fixed;
+    width: 270px;
+    right: 0px;
+    bottom: 150px;
+    border:1px solid rgb(136, 33, 38);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 6000;
+    /* animation: actualizado 1s forwards; */
+    
+}
+
+.Contacto form .mensaje p {
+    padding: 0px 40px 0px 20px;
+    color: white;
+}
+
+.Contacto form .mensaje i {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.Contacto .info {
+    background: rgba(204,46,55);
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.192);
+}
+
+.Contacto .info h3 {
+    font-weight: 100;
+}
+
+.Contacto .info p {
+    font-size: 12px;
+}
+
+@keyframes enviado {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+}
+
+@keyframes ocultarEnviado {
+    from {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+
+    .Contacto {
+        grid-template-rows: .5fr 1fr 1fr;
+        grid-template-columns: .3fr 1fr;
+    }
+    .Contacto form {
+        grid-column: 1/3;
+        /* margin: 10px 10px; */
+    }
+    .Contacto .info {
+        grid-column: 1/3;
+        /* margin: 10px 10px; */
+    }
+
+}

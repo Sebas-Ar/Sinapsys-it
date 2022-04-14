@@ -1,0 +1,28 @@
+.Tarjeta {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 340px;
+    margin: 20px 0;
+}
+.Tarjeta img {
+    height: 100px;
+    margin: 10px auto;
+}
+
+.Tarjeta p {
+    text-align: center;
+    margin: 0;
+}
+
+.Tarjeta h3 {
+    text-align: center;
+    align-self: center;
+    background: rgba(204,46,55);
+    padding: 15px 25px;
+    color: white;
+    font-size: calc(1.5vw + 1vmin);
+    border-radius: 30px;
+    margin: 20px 0;
+}

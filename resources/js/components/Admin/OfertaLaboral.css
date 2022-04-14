@@ -1,0 +1,249 @@
+.OfertaLaboral {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    justify-items: center;
+}
+
+.OfertaLaboral header {
+    width: 100%;
+    background: #0A0A24;
+    height: 150px;
+    display: grid;
+}
+
+.OfertaLaboral header img {
+    margin: auto;
+    height: 45px;
+}
+
+.OfertaLaboral header h1 {
+    background: #CC2E37;
+    position: absolute;
+    top: 110px;
+    padding: 10px 40px 10px 70px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.OfertaLaboral header .center {
+    align-self: center;
+    grid-column: 2/3;
+}
+.OfertaLaboral header .reg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #CC2E37;
+    text-decoration: none;
+    color: white;
+    font-size: 13.3px;
+}
+
+.OfertaLaboral header a:hover {
+    background: rgb(235, 16, 27);
+}
+
+.OfertaLaboral .content {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.OfertaLaboral .content button {
+    margin: 5px 0;
+    height: 40px;
+    width: 187px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    background: #CC2E37;
+    color: white;
+}
+
+.OfertaLaboral .content button:hover {
+    background: rgb(238, 22, 33);
+}
+
+.OfertaLaboral .content label {
+    font-size: 12px;
+    color: #666666aa;
+}
+
+.OfertaLaboral .content input {
+    outline: none;
+    border: 1px solid #88888877;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.OfertaLaboral .content textarea {
+    outline: none;
+    height: 120px;
+    width: 370px;
+    border: 1px solid #88888877;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.OfertaLaboral .content .mensaje {
+    background: #CC2E37;
+    position: fixed;
+    width: 270px;
+    right: 0px;
+    bottom: 100px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    /* animation: actualizado 1s forwards; */
+    
+}
+
+.OfertaLaboral .content .mensaje p {
+    padding: 0px 40px 0px 20px;
+    color: white;
+}
+
+.OfertaLaboral .content .mensaje i {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.OfertaLaboral .content .mensaje a {
+    text-align: center;
+    color: white;
+    text-decoration: underline white;
+    padding: 5px;
+
+}
+
+.OfertaLabAdmin {
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr 8fr 1.5fr;
+    border: 1px solid #CC2E37;
+}
+
+.OfertaLabAdmin .xp {
+    background: #CC2E37;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.OfertaLabAdmin .xp {
+    color: white;
+}
+
+.OfertaLabAdmin .xp h2:nth-child(1){
+    justify-self: flex-end;
+    font-size: 130px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.OfertaLabAdmin .xp h2:nth-child(2){
+    display: grid;
+    margin: 0 10px 0 0;
+}
+
+.OfertaLabAdmin .xp .s1 {
+    font-size: 40px;
+    align-self: flex-end;
+    font-weight: 900;
+    margin: 0;
+}
+
+.OfertaLabAdmin .xp .s2 {
+    font-size: 16px;
+    font-weight: 400;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.OfertaLabAdmin {
+    background: #504d4d54;
+    z-index: 50;
+}
+
+.OfertaLabAdmin h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.OfertaLabAdmin p {
+    text-align: justify;
+    align-self: center;
+    border-left: 1px solid #CC2E37;
+    border-right: 1px solid #CC2E37;
+    padding: 0 10px;
+}
+
+.OfertaLabAdmin button {
+    background: #CC2E37;
+    height: 30px;
+    color: white;
+    align-self: center;
+    border: none;
+    margin: 0 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.OfertaLabAdmin button:hover {
+    background: rgb(224, 11, 22);
+}
+
+.OfertaLaboral .error {
+    color: #CC2E37;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+    .OfertaLabAdmin {
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #CC2E37;
+    }
+}
+
+@keyframes actualizado {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+}
+
+@keyframes ocultarAcualizado {
+    from {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

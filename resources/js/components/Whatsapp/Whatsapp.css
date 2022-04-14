@@ -1,0 +1,133 @@
+.Whatsapp .accionar {
+    background: #0a0a24;
+    color: #efe5dd;
+    position: fixed;
+    right: 15px;
+    bottom: 85px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    z-index: 8000;
+}
+.Whatsapp .accionar i {
+    font-size: 15px;
+}
+
+.Whatsapp .formulario {
+    position: fixed;
+    right: 15px;
+    bottom: 150px;
+    height: 300px;
+    width: 240px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 6fr 1fr;
+    transform: translateY(150%);
+    z-index: 8000;
+}
+
+.Whatsapp .formulario .close{
+    margin-top: 15px;
+    margin-bottom: 8px;
+    grid-column: 1/3;
+    justify-self: right;
+    font-size: 20px;
+    background: #0a0a24;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 80px 5px #00000011;
+    outline: none;
+    color: white;
+}
+
+.Whatsapp .formulario .close:hover, .Whatsapp .accionar:hover{ 
+    background: #16164e;
+}
+
+.Whatsapp .formulario div {
+    grid-column: 1/3;
+    border-radius: 15px 15px 15px 15px;
+    background: #0a0a24;
+    color: #efe5dd;
+    box-shadow: 0 0 80px 5px #00000011;
+}
+
+.Whatsapp .formulario .escribenos {
+    padding: 0 15px;
+}
+
+.Whatsapp .formulario div img {
+    margin-top: 20px; 
+    height: 50px;
+}
+.Whatsapp .formulario div .color {
+    background:#efe5dd;
+    color: #967961;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+.Whatsapp .formulario input {
+    margin-top: 15px;
+    width: 170px;
+    padding: 15px 5px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    box-shadow: 0 0 80px 5px #00000011;
+    outline: none;
+}
+
+.Whatsapp .formulario input::placeholder {
+    color: #967961;
+}
+
+
+.Whatsapp .formulario form {
+    grid-column: 1/3;
+}
+
+.Whatsapp .formulario .enviar {
+    background: white;
+    height: 47px;
+    width: 60px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    box-shadow: 10px 0 80px 5px #00000011;
+    outline: none;
+}
+
+.Whatsapp .formulario .enviar:hover {
+    color: #16164e;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        display: none;
+        transform: translateY(130%);
+    }
+    to {
+        opacity: 1;
+        display: inline;
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        display: inline;
+        transform: translateY(-5%);
+    }
+    to {
+        opacity: 0;
+        display: none;
+        transform: translateY(150%);
+    }
+}

@@ -1,0 +1,17 @@
+.Logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.Logout button {
+    background: #CC2E37;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.Logout button:hover {
+    background: rgb(231, 13, 24);
+}

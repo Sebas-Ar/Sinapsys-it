@@ -1,0 +1,60 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Asap", Arial, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: segoe;
+  src: url(../fonts/Segoe-UI.ttf);
+}
+
+@font-face {
+  font-family: righteous;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inicio .presentacion {
+  width: 100%;
+  background: rgb(4, 8, 46);
+}
+
+.inicio .content {
+  display: grid;
+  margin-top: 40px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.recaptcha {
+  z-index: 9000;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* #efe5dd */
+@media screen and (max-width: 1180px){
+  .inicio .content {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .inicio .content {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

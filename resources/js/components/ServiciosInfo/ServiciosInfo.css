@@ -1,0 +1,50 @@
+.ServiciosInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 30px;
+}
+
+.ServiciosInfo img {
+    height: calc(20vw + 10vmin);
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.ServiciosInfo div {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-column: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+
+.ServiciosInfo div h3 {
+    color: rgba(204,46,55);
+    font-weight: bolder;
+    font-size: calc(3vw + 5vmin);
+    align-self: flex-end;
+}
+
+.ServiciosInfo div p {
+    width: 500px;
+}
+
+.ServiciosInfo div ul {
+    padding: 0;
+}
+
+.ServiciosInfo div ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.ServiciosInfo div ul li::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background:rgba(204,46,55);
+    display: inline-block;
+    margin: 1px 10px 1px 1px;
+    border-radius: 50%;
+}

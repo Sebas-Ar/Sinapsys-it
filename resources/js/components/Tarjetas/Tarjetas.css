@@ -1,0 +1,80 @@
+.Tarjetas {
+    height: 233px;
+    width: 260px;
+    margin: 50px auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.Tarjetas h3{
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.Tarjetas p{
+    color: rgba(66, 64, 64, 0.712);
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+    margin: auto;
+}
+.Tarjetas a {
+    text-decoration: none;
+}
+
+.Tarjetas img {
+    display: block;
+    margin: auto;
+    width: 70px;
+}
+
+/* 
+@media screen and (max-width: 1030px) {
+    .Tarjetas {
+        width: 120px;
+    }
+
+    .Tarjetas:hover {
+        width: 118px;
+    }
+
+    .Tarjetas img {
+        height: 40px;
+    }
+
+    .Tarjetas h3{
+        margin: 35px 0;
+        font-size: 20px;
+    }
+
+    .Tarjetas p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .Tarjetas {
+        width: 120px;
+    }
+
+    .Tarjetas:hover {
+        width: 118px;
+    }
+
+    .Tarjetas img {
+        height: 40px;
+    }
+
+    .Tarjetas h3{
+        margin: 35px 0;
+        font-size: 20px;
+    }
+
+    .Tarjetas p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+} */

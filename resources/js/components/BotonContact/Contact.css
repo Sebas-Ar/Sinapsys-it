@@ -1,0 +1,29 @@
+.Contact {
+    position: absolute;
+    top: calc(4vw + 3vmin);
+    right: calc(3vw + 3vmin);
+    height: calc(1vmin + 1vw);
+    width: calc(19vmin + 4vw);
+    background: #CC2E37;
+    padding: 5px;
+    border-radius: 10px;        
+    z-index: 8000;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.Contact:hover {
+    background: rgb(197, 19, 27);
+}
+
+.linkContact {
+    color: white;
+    font-size: calc( .6vw + 1vmin);
+}
+
+.Contact svg {
+    fill: white;
+    height: calc( .6vw + 1vmin);
+}

@@ -1,0 +1,92 @@
+.Presentacion video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.Presentacion {
+    position: relative;
+    top: 0;
+}
+
+
+.Presentacion > div {
+    position: relative;
+    padding: calc((5vw + 4vmin)*1.5) 20px 0 20px;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-rows: calc(5vw + 4vmin) 3fr;
+    justify-items: center;
+}
+
+.Presentacion h1 {
+    margin: 0 ;
+    align-self: flex-end;
+    font-size: calc(4vw + 2vmin);
+}
+
+.Presentacion p:nth-child(1) {
+    font-size: calc(3vw);
+    margin-bottom: 0;
+}
+
+.Presentacion p {
+    text-align: center;
+    align-self: center;
+    font-size: calc(.5vw + 2vmin);
+    margin: auto;
+}
+
+.Presentacion p:nth-child(3) {
+    text-align: justify;
+    display: none;
+}
+
+.Presentacion button {
+    color: white;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 7px 40px;
+    margin-top: 10px;
+    background: rgba(204,46,55);
+    font-size: 15px;
+}
+
+.Presentacion button:hover {
+    background: rgb(228, 50, 59);
+}
+
+.Presentacion .subtitulo h2 {
+    font-size: calc(3vw + 2vmin);
+    margin: auto;
+}
+
+.Presentacion .subtitulo {
+    position: absolute;
+    height: calc(6vw + 2vmin);
+    bottom: calc(-20vw - 15vmin);
+    right: 0;
+    background: rgba(204,46,55);
+    padding: 15px 40px 15px 70px;
+    border-radius: 65px 0 0 65px;
+    transform: translateY(0%);
+    box-shadow: -0px 0px 25px 0 black;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .Presentacion p:nth-child(2) {
+        margin: 0 40px;
+        display: none;
+    }
+
+    .Presentacion p:nth-child(3) {
+        display: inline;
+    }
+}

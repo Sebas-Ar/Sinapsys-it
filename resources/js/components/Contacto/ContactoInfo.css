@@ -1,0 +1,162 @@
+.ContactoInfo {
+    margin: 0 0 50px 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.ContactoInfo h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.ContactoInfo .parrafo {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 30px;
+}
+
+.ContactoInfo .form form, .ContactoInfo .info {
+    z-index: 4000;
+    /* display: none; */
+}
+
+.ContactoInfo form {
+    height: 300px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr .5fr 1fr .5fr 2fr 1.4fr;
+    /* border: 1px solid black; */
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.192);
+}
+
+.ContactoInfo form h3 {
+    grid-column: 1/3;
+}
+
+.ContactoInfo form input, .ContactoInfo form textarea {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.ContactoInfo form label:nth-child(2), .ContactoInfo form input:nth-child(4), .ContactoInfo form input:nth-child(8) {
+    margin-right: 15px;
+}
+
+.ContactoInfo form label:nth-child(3), .ContactoInfo form input:nth-child(5), .ContactoInfo form input:nth-child(9), .ContactoInfo form label:nth-child(7) {
+    margin-left: 15px;
+}
+
+.ContactoInfo .celular {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.ContactoInfo .pais {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.ContactoInfo form label {
+    font-size: 13px;
+    align-self: flex-end;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.ContactoInfo form input {
+    width: 88%;
+    height: 20px;
+    align-self: center;
+    outline: none;
+}
+
+.ContactoInfo form label:nth-child(6) {
+    grid-column: 1/3;
+    align-self: flex-start;
+}
+
+.ContactoInfo form textarea {
+    grid-column: 1/3;
+    outline: none;
+}
+
+.ContactoInfo form button {
+    border: none;
+    border-radius: 5px;
+    background: rgb(10, 10, 36);
+    color: white;
+    margin-top: 15px;
+}
+
+.ContactoInfo form .error {
+    color: #CC2E37;
+    font-size: 14px;
+    justify-self: center;
+    margin: 0 5px;
+}
+
+.ContactoInfo .mensaje {
+    background: #CC2E37;
+    position: fixed;
+    width: 270px;
+    right: 0px;
+    bottom: 100px;
+    border:1px solid rgb(136, 33, 38);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 6000;
+    /* animation: actualizado 1s forwards; */
+    
+}
+
+.ContactoInfo .mensaje p {
+    padding: 0px 40px 0px 20px;
+    color: white;
+}
+
+.ContactoInfo .mensaje i {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.ContactoInfo .info {
+    background: rgba(204,46,55);
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: -5px 20px 15px -10px rgba(0, 0, 0, 0.192);
+}
+
+.ContactoInfo .info h3 {
+    font-weight: 100;
+}
+
+.ContactoInfo .info p {
+    font-size: 12px;
+}
+
+.ContactoInfo .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 750px) {
+    
+    .ContactoInfo .form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .ContactoInfo {
+        grid-template-rows: .5fr .2fr 3fr;
+    }
+}

@@ -1,0 +1,86 @@
+.OfertaLab {
+    margin: 100px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 8fr;
+    grid-template-rows: 5fr 1fr;
+}
+
+.OfertaLab .xp {
+    background: #CC2E37;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.OfertaLab .xp {
+    color: white;
+}
+
+.OfertaLab .xp h2:nth-child(1){
+    justify-self: flex-end;
+    font-size: 130px;
+    margin: 50px 0;
+    font-weight: 900;
+}
+
+.OfertaLab .xp h2:nth-child(2){
+    display: grid;
+    height: 100%;
+
+}
+
+.OfertaLab .xp .s1 {
+    font-size: 40px;
+    align-self: flex-end;
+    font-weight: 900;
+    margin: 0;
+}
+
+.OfertaLab .xp .s2 {
+    font-size: 16px;
+    font-weight: 400;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.OfertaLab .info {
+    background: #504d4d54;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    z-index: 50;
+}
+
+.OfertaLab .info h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.OfertaLab .info p {
+    margin: 40px 200px 40px 150px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 980px) {
+    .OfertaLab {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+    }
+    .OfertaLab .xp {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .OfertaLab .info {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .OfertaLab .info p {
+        margin: 40px 30px;
+        text-align: justify;
+    }
+}

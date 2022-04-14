@@ -1,0 +1,123 @@
+.MisionVision {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2.5fr;
+    grid-template-columns: 1fr 2fr .7fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+}
+.MisionVision .linea1, .MisionVision .linea2, .MisionVision .linea3, .MisionVision .linea4 {
+    height: 110px;
+    width: 12px;
+    background: rgba(204,46,55);
+
+}
+
+.MisionVision img {
+    height: 50px;
+}
+
+.MisionVision img:nth-child(1) {
+    grid-column: 2/3;
+}
+
+.MisionVision img:nth-child(2) {
+    grid-column: 4/5;
+}
+
+.MisionVision .linea1, .MisionVision .linea3 {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.MisionVision .linea2, .MisionVision .linea4 {
+    grid-row: 2/4;
+    grid-column: 5/6;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.MisionVision .linea3, .MisionVision .linea4 {
+    display: none;
+}
+
+.MisionVision .tit1 {
+    grid-column: 2/3;
+}
+
+.MisionVision .tit2 {
+    grid-column: 4/5;
+}
+
+.MisionVision .tit1, .MisionVision .tit2 {
+    grid-row: 2/3;
+    background: rgba(204,46,55);
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.MisionVision p {
+    font-size: 14px;
+    color: rgb(61, 58, 53);
+}
+
+.MisionVision .cont1 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.MisionVision .cont2 {
+    grid-row: 3/4;
+    grid-column: 5/4;
+}
+
+.MisionVision p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 1070px) {
+    .MisionVision {
+        display: grid;
+        grid-template-rows: 1fr 1fr 2.5fr 1fr 1fr 2.5fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .MisionVision .tit2, .MisionVision img:nth-child(2), .MisionVision .cont2 {
+        grid-column: 2/3;
+    }
+
+    .MisionVision .linea2 {
+        grid-column: 3/4;
+    }
+
+    .MisionVision .tit2 {
+        grid-row: 5/6;
+    }
+
+    .MisionVision .cont2 {
+        grid-row: 6/7;
+    }
+
+    .MisionVision .linea3, .MisionVision .linea4 {
+        display: inline;
+        grid-row: 6/7;
+        
+    }
+
+    .MisionVision .linea4 {
+        grid-column: 3/4;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .MisionVision {
+        grid-template-rows: 1fr 1fr 3.5fr 1fr 1fr 3.5fr;
+    }
+
+}
